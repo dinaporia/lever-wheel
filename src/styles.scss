@@ -1,0 +1,61 @@
+// theme colors
+$primary: #2e4859;
+$secondary: #f49c3a;
+$light: #ebf1ef;
+$medium: #cfcfcf;
+$dark: #6c6c6c;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "medium": $medium,
+  "dark": $dark
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Adobe ITC American Typewriter font family
+@import url("https://use.typekit.net/dqz2zhw.css");
+
+// RESPONSIVE FONT SIZING //
+html, body {
+  font-family: 'itc-american-typewriter', 'Times New Roman',serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  background-color: $light;
+}
+
+@media only screen and (max-width: 992) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: $primary;
+  padding: 1em;
+  .logo {
+    height: 30vh;
+  }
+}
+  
+.title {
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 1.2rem;
+}
+
