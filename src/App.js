@@ -10,7 +10,7 @@ import  { headerContent, socialContent } from './content';
 function App() {
   return (
     <Router>
-      <div>
+      <div className='container-fluid p-0'>
         <Header content={headerContent} />
         <Navigation />
         <Footer content={socialContent} />

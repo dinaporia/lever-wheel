@@ -42,20 +42,67 @@ html, body {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
-  color: $primary;
-  padding: 1em;
-  .logo {
-    height: 30vh;
-  }
+  background-color: $secondary;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0.5rem;
+ // border-bottom: $primary 0.1rem solid;
 }
   
 .title {
-  font-weight: 700;
+  letter-spacing: 1pt;
+  margin: 0.3rem;
+  text-align: left;
+ // border: $primary 0.2rem solid;
+ // border-right: $primary 0.8rem solid;
+  padding: 0.2rem 1rem;
+  align-self: flex-start;
+  h4 {
+    margin-bottom: 0;
+  }
 }
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex-grow: 1;
+ // justify-content: space-between;
+ justify-content: flex-end;
+  padding: 0.5rem;
+  padding-bottom: 0;
+ 
+
+}
+
+.menu {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+
+  a {
+    text-align: center;
+    font-variant-caps: small-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    padding: 0.2rem 0.7rem;
+    &:hover {
+      text-decoration: none;
+      background-color: $primary;
+      color: $secondary;
+    }
+    &.active {
+      color: white;
+    }
+  }
+}
+
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  width: 100%;
+  align-self: flex-start;
+  margin-bottom: 0;
 }
+
 

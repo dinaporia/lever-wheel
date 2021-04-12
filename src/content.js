@@ -6,10 +6,10 @@ Edit any text inside quotation marks as needed. Make sure no other text is alter
 const headerContent = {
     title: "Lever & Wheel",
     subtitle: "Writing and Editorial Services",
-    tagline: "Expert Editing with a Teacher's Touch"
 }; 
 
 const homeContent = {
+    tagline: "Expert Editing with a Teacher's Touch",
     description: "Good writing takes a lot of hard work. Writers have always looked for tools to make that work easier. Many of these tools are mechanical: a stylus and wax tablet, pen and paper, a printing press, a typewriter, a laptop. Other tools address the mental work of writing—the lonely, decision-making work that happens mostly or entirely in your own head. At Lever & Wheel, I offer this kind of tool."
 };
 
