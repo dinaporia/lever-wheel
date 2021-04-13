@@ -4,7 +4,7 @@ import ATF from './ATF';
 
 const Home = ({content: {tagline, description}}) => {
     return (
-        <div className='home'>
+        <div className='home container-fluid'>
            <ATF description={description} tagline={tagline} />
            {/* alternate stock images/icons left/right with following */}
            <div>Click here to learn more about my philosophy</div>
