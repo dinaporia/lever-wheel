@@ -47,10 +47,10 @@ const aboutContent = [
 /* TO ADD SOCIAL MEDIA BUTTON, ADD URL BETWEEN QUOTES BELOW
     TO REMOVE SOCIAL MEDIA BUTTON, REMOVE URL LEAVING ""    */
 const socialContent = [
-    { name: "linkedin", url: "" },
-    { name: "facebook", url: "" },
-    { name: "instagram", url: "" },
-    { name: "twitter", url: "" }
+    { name: "linkedin", url: "http://linkedin.com" },
+    { name: "facebook", url: "http://facebook.com" },
+    { name: "instagram", url: "http://facebook.com" },
+    { name: "twitter", url: "http://facebook.com" }
 ];
 
 

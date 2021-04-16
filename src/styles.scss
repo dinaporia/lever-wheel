@@ -27,7 +27,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
-  background-color: $light;
+  
 }
 
 @media only screen and (max-width: 992) {
@@ -46,20 +46,16 @@ html, body {
 .header {
   display: flex;
   text-align: center;
-  background-color: $secondary;
   position: sticky;
   top: 0;
   z-index: 100;
- // margin-bottom: 0.5rem;
   font-family: $typewriter;
- // border-bottom: $primary 0.1rem solid;
+  background-color: $light;
 }
   
 .header-left {
   margin: 0.3rem;
   text-align: left;
- // border: $primary 0.2rem solid;
- // border-right: $primary 0.8rem solid;
   padding: 0.2rem 1rem;
   align-self: flex-start;
   h4 {
@@ -79,35 +75,32 @@ html, body {
   flex-direction: column;
   align-self: stretch;
   flex-grow: 1;
- // justify-content: space-between;
- justify-content: flex-end;
+  justify-content: flex-end;
   padding: 0.5rem;
   padding-bottom: 0;
 }
 
 .menu {
   display: flex;
-  margin-right: 0;
+  margin-right: 01rem;
   margin-left: auto;
-  padding-bottom: 0.5rem;
+  
   a {
     text-align: center;
     font-variant-caps: small-caps;
     font-family: $standard;
-    font-size: 1.2em;
-    padding: 0 0.7rem;
-   
-    border-right: $primary 2px solid;
+    padding: 0.3rem 1rem;
     &:last-child {
       border-right: none;
     }
     &:hover {
       text-decoration: none;
-      background-color: $primary;
-      color: $secondary;
+      background-color: $secondary;
+      color: white;
     }
     &.active {
-      color: white;
+      background-color: $secondary;
+      color: $primary;
     }
   }
 }
@@ -115,34 +108,57 @@ html, body {
 // HOME PAGE //
 .home {
   padding: 1rem;
-  max-width: 1000px;
+ // max-width: 1200px;
   margin: 0 auto;
+  
 }
-
+.home-content {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 0.9em;
+}
 
 .ATF {
   height: 90vh;
   padding-bottom: 2rem;
   align-items: center;
-  p {
-    font-family: $typewriter;
-    text-align: center;
+  h2 {
+    font-family: $standard;
+    
     display: block;
   } 
   img {
-    width: 400px;
+    width: 600px;
     max-width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
   }
-  .description {
-    max-width: 80%;
-    margin: auto;
-    font-size: 0.9em;
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a:hover {
+      color: white;
+    }
   }
 }
 
 
 
+// FOOTER //
+.footer {
+  display: flex;
+  padding: 2rem 0.5rem;
 
+  text-align: center;
+  background-color: $primary;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

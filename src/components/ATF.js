@@ -1,16 +1,23 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 
-const ATF = ({description, tagline}) => {
+const ATF = ({tagline}) => {
     
     return (
     
         <div className='ATF row'>
-            <p className='col-6'>{tagline}</p>
             <div className='col-6'>
                 <img src='/images/header-logo.png' alt='illustration of typewriter with Lever & Wheel typed on page' />
             </div>
-            <p className='description col-12'>{description}</p>
+            <div className='col-6 tagline'>
+                <h2>{tagline}</h2>
+                <Link className='btn btn-secondary btn-lg mt-4' to='/contact'>Request Quote</Link>
+
+            </div>
+            
+            
+         
         </div>
             
         
