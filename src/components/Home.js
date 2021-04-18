@@ -7,7 +7,7 @@ const Home = ({content: {tagline, description}}) => {
         <div className='home container-fluid'>
            <ATF tagline={tagline} />
            {/* alternate stock images/icons left/right with following */}
-            <div className='home-content'>
+            <div className='container'>
                 <p>{description}</p>
                 <div>Click here to learn more about my philosophy</div>
                 <div>Learn more about services offered</div>

@@ -50,7 +50,7 @@ html, body {
   top: 0;
   z-index: 100;
   font-family: $typewriter;
-  background-color: $light;
+  background-color: white;
 }
   
 .header-left {
@@ -112,12 +112,6 @@ html, body {
   margin: 0 auto;
   
 }
-.home-content {
-  max-width: 1200px;
-  margin: auto;
-  font-size: 0.9em;
-}
-
 .ATF {
   height: 90vh;
   padding-bottom: 2rem;
@@ -131,8 +125,7 @@ html, body {
     width: 600px;
     max-width: 90%;
     height: auto;
-    display: block;
-    margin-left: auto;
+
   }
   .tagline {
     display: flex;
@@ -150,15 +143,59 @@ html, body {
 .footer {
   display: flex;
   padding: 2rem 0.5rem;
-
+  justify-content: center;
   text-align: center;
-  background-color: $primary;
-  color: white;
+  background-color: $secondary;
+  color: black;
   a {
-    color: white;
+    color: $primary;
     text-decoration: none;
     &:hover {
-      color: $secondary;
+      color: white;
     }
   }
 }
+
+
+// SERVICES PAGE // 
+
+.services {
+  margin-top: 1rem;
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+.services-content {
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+  border-top: $primary solid 2px;
+  border-bottom: $primary solid 2px;
+  &:last-child {
+    border-bottom: none;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &.left {
+    .name {
+      text-align: left;
+    }
+    .description {
+      text-align: right;
+    }
+  }
+  &.right {
+    flex-flow: row-reverse;
+   
+    .name {
+      text-align: right;
+    }
+    .description {
+      text-align: left;
+    }
+  }
+}
+
