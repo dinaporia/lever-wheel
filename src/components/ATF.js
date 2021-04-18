@@ -12,15 +12,9 @@ const ATF = ({tagline}) => {
             </div>
             <div className='col-6 tagline'>
                 <h2>{tagline}</h2>
-                <Link className='btn btn-secondary btn-lg mt-4' to='/contact'>Request Quote</Link>
-
+                <Link className='btn btn-secondary btn-lg mt-4' to='/contact'>Contact Me!</Link>
             </div>
-            
-            
-         
         </div>
-            
-        
     );
 }
 
