@@ -7,12 +7,14 @@ const Home = ({content: {tagline, description}}) => {
         <div className='home container-fluid'>
            <ATF tagline={tagline} />
            {/* alternate stock images/icons left/right with following */}
-            <div className='container'>
-                <p>{description}</p>
-                <div>Click here to learn more about my philosophy</div>
-                <div>Learn more about services offered</div>
-                <div>Contact me to request a quote or more information</div>
+            <div className='home-content container'>
+                <p className='description'>{description}</p>
+                <div className='home-links row'>
+                    <p className='col-12 col-lg-4'>Learn more about my philosophy</p>
+                    <p className='col-12 col-lg-4'>Find out about services I offer</p>
+                    <p className='col-12 col-lg-4'>Contact me to request a quote or more information</p>
                 </div>
+            </div>
            
         </div>
 
