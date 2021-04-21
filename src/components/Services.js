@@ -12,7 +12,7 @@ const Services = ({content}) => {
                     <h4>{service.name}</h4>
                     <p className='price'>{service.price}</p>
                 </div>
-                <div className='col-9 description'> 
+                <div className='col-9 description d-md-flex'> 
                     {service.description.map((item, index) => {
                         return <p key={key + '-' + index}>{item}</p>;
                     })}

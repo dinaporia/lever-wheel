@@ -14,12 +14,14 @@ $theme-colors: (
 );
 
 $typewriter: 'itc-american-typewriter', 'Times New Roman',serif;
-$standard: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$standard: 'Karla', Calibri, sans-serif;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
 // Adobe ITC American Typewriter font family
 @import url("https://use.typekit.net/dqz2zhw.css");
+// Google Fonts Karla font family
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,400;0.500;0,700;1,400&display=swap');
 
 // RESPONSIVE FONT SIZING //
 html, body {
@@ -84,11 +86,11 @@ html, body {
   display: flex;
   margin-right: 01rem;
   margin-left: auto;
-  
   a {
     text-align: center;
     font-variant-caps: small-caps;
     font-family: $standard;
+    font-weight: 500;
     padding: 0.3rem 1rem;
     &:last-child {
       border-right: none;
@@ -114,10 +116,6 @@ html, body {
 }
 
 .home-content {
-  // display: flex;
-  // flex-direction: column;
-  // padding: 0 1rem;
-  // max-width: 1200px;
   margin: auto;
   font-size: 1.2em;
   .description {
@@ -138,24 +136,24 @@ html, body {
 }
 
 .ATF {
-  height: 90vh;
+  min-height: 90vh;
   padding-bottom: 2rem;
   align-items: center;
   h2 {
     font-family: $standard;
-    
     display: block;
+    font-size: 1.5em;
   } 
   img {
     width: 600px;
     max-width: 90%;
     height: auto;
-
   }
   .tagline {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     a:hover {
       color: white;
     }
@@ -196,6 +194,15 @@ html, body {
   padding: 1rem 0;
   border-top: $primary solid 2px;
   border-bottom: $primary solid 2px;
+  justify-content: center;
+  .name {
+    flex-grow: 1;
+    max-width: 80%;
+    text-align: center;
+  }
+  .price {
+    margin-bottom: 0;
+  }
   &:last-child {
     border-bottom: none;
   }
@@ -204,22 +211,38 @@ html, body {
     flex-direction: column;
     justify-content: center;
   }
-  &.left {
-    .name {
-      text-align: left;
+  .description {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .services-content {
+    &.left {
+      .name {
+        text-align: left;
+      }
+      .description {
+        text-align: right;
+      }
     }
-    .description {
-      text-align: right;
+    &.right {
+      flex-flow: row-reverse;
+     
+      .name {
+        text-align: right;
+      }
+      .description {
+        text-align: left;
+      }
     }
   }
-  &.right {
-    flex-flow: row-reverse;
-   
-    .name {
-      text-align: right;
-    }
-    .description {
+  .ATF {
+    .tagline {
       text-align: left;
+    }
+    h2 {
+      font-size: 2em;
     }
   }
 }
