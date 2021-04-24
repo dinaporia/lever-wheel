@@ -1,8 +1,6 @@
 import React from 'react';
 import RenderService from './Service';
 
-import Service from './Service';
-
 const Services = ({content}) => {
 
     

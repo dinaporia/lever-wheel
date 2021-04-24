@@ -19,7 +19,7 @@ const Navigation = () => {
             <About content={aboutContent}/>
         </Route>
         <Route path='/contact'>
-            <Contact />
+            <Contact services={servicesContent} />
         </Route>
         <Route path='/services'>
             <Services content={servicesContent}/>

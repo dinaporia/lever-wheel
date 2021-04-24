@@ -220,37 +220,37 @@ html, body {
         margin-bottom: 0;
         align-self: center;
       }
-    }
-  }
-  button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 2em;
-    font-weight: bold;
-    color: gray;
-    align-self: center;
-    span::before {
-      content: "\002B";
-    }
-    &.minus {
-      span::before {
-        content: "\2212"
+  
+      button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 2em;
+        font-weight: bold;
+        color: gray;
+        align-self: center;
+        span::before {
+          content: "\002B";
+        }
+        &.minus {
+          span::before {
+            content: "\2212"
+          }
+        }
+        &:hover {
+          color: black;
+          cursor: pointer;
+        }
+      }
+      .description {
+        display: none; // collapsed on small screens
+        &.show {
+          display: flex; // expand on click
+        }
       }
     }
-    &:hover {
-      color: black;
-      cursor: pointer;
-    }
   }
-  .description {
-    display: none; // collapsed on small screens
-    &.show {
-      display: flex; // expand on click
-    }
-  }
-}
-
+} 
 
 @media only screen and (min-width: 768px) {
   .services-content {
