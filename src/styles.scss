@@ -210,11 +210,47 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .description-title {
+      display: flex;
+      flex-direction: row;
+      line-height: 1em;
+      margin-bottom: 0.5em;
+      h4 {
+        flex-grow: 1;
+        margin-bottom: 0;
+        align-self: center;
+      }
+    }
+  }
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: bold;
+    color: gray;
+    align-self: center;
+    span::before {
+      content: "\002B";
+    }
+    &.minus {
+      span::before {
+        content: "\2212"
+      }
+    }
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
   .description {
-    display: none;
+    display: none; // collapsed on small screens
+    &.show {
+      display: flex; // expand on click
+    }
   }
 }
+
 
 @media only screen and (min-width: 768px) {
   .services-content {
@@ -235,6 +271,9 @@ html, body {
       .description {
         text-align: left;
       }
+    }
+    button {
+      display: none;
     }
   }
   .ATF {
