@@ -4,6 +4,7 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import ContactForm from './FormFields';
 import Services from './Services';
 
 
@@ -19,7 +20,7 @@ const Navigation = () => {
             <About content={aboutContent}/>
         </Route>
         <Route path='/contact'>
-            <Contact services={servicesContent} />
+            <ContactForm services={servicesContent} />
         </Route>
         <Route path='/services'>
             <Services content={servicesContent}/>
