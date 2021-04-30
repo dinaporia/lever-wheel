@@ -63,8 +63,19 @@ const servicesContent = [
 /*  TO EDIT ABOUT CONTENT, INDIVIDUAL PARAGRAPHS MUST BE WRAPPED IN QUOTES AND SEPARATED WITH COMMA */
 const aboutContent = [
     "Margaret Bostrom, PhD (she/her)",
-    "I am an editor, writer, and teacher with nearly two decades of experience across a wide variety of editorial projects.",
-    "I have worked with self-published authors, print & web publications, textbook publishers, undergraduate and graduate students, career academics, and working professionals."
+   
+   " I am a professional college writing instructor with writing program administration experience, over seven years of university-level classroom teaching experience, and more than a decade of experience working as freelance editor, writing coach, and writing tutor.",
+
+    "In 2019, I received my PhD in English with a graduate certificate in Women’s, Gender, and Sexuality Studies from the University of Oregon. As an instructor at UO, I taught a variety of writing courses, including introductory college-level writing classes and courses in interdisciplinary research-based college writing. I also taught literature courses and courses in Women’s, Gender, and Sexuality Studies.",
+
+    "For two years, I served as an Assistant Director for UO’s Composition Program. In that role, I trained incoming writing instructors, led efforts to integrate principals of Universal Design for Learning (UDL) and Project-Based Learning (PBL) into our writing curricula and policies, and worked on our program’s initiatives related to Diversity, Equity, and Inclusion.",
+    
+    "In my early twenties, around 2010-2012, I worked as a bookseller and supervisor at The Harvard Bookstore (HBS) in Cambridge, Massachusetts. HBS was one of the first independent bookstores to have its own Print-on-Demand book machine (we call her Paige M. Gutenborg). I began working with authors looking to self-publish using HBS's press, providing services I later learned are called developmental editing, copyediting, and writing coaching. Through these experiences, I found out that I love working with people who do NOT think of themselves as writers—a group that, in my experience, includes many authors looking to self-publish, most incoming college students, and a large number of professionals and graduate students. I also enjoy working with writers who are stuck, struggling, or dealing with writer's block, writers who are experiencing a lot of self-doubt or frustration, and/or writers who have undergone some kind of life change (for example, illness or injury, changes in living situation or life responsibilities, etc.) and are trying to re-establish a positive, efficient relationship with their writing life.",
+
+    "In my free time, I love being outdoors, especially on water. I keep my inflatable kayak in the trunk of my car. I love reading and writing poetry, learning new things (I’m learning to play the guitar right now, on an instrument loaned to me by the friend who designed this website!), and being deeply committed to television melodramas like Grey’s Anatomy.",
+
+    "I currently live in Tacoma, WA, with my girlfriend, Candice, her daughter, Sophie, and their cats, Josephine Lovelace March and Tobias Slughorn Fiddlesticks III.",
+
 ];
 
 /* TO ADD SOCIAL MEDIA BUTTON, ADD URL BETWEEN QUOTES BELOW
