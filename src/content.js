@@ -37,7 +37,7 @@ const servicesContent = [
         ]   
     },
     {
-        name: "Writing Tutoring and Coaching",
+        name: "Tutoring or Writing Coaching",
         price: "$225",
         description: [
             ""
